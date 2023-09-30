@@ -33,7 +33,7 @@ function StudyPage() {
         </div>
       </div>
     );
-  } else return 'Loading deck here...';
+  } else return 'Loading ';
 }
 
 export default StudyPage;

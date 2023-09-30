@@ -44,27 +44,18 @@ function Deck() {
         <div className='row justify-content-between'>
           <div className='col-8'>
             <Link to={`/decks/${deckId}/edit`}>
-              <button className='btn btn-secondary mr-1'>
-                <i class='bi bi-pencil mr-1'></i>
-                Edit
-              </button>
+              <button className='btn btn-secondary mr-1'>Edit</button>
             </Link>
             <Link to={`/decks/${deckId}/study`}>
-              <button className='btn btn-primary mr-1'>
-                <i class='bi bi-book mr-1'></i>
-                Study
-              </button>
+              <button className='btn btn-primary mr-1'>Study</button>
             </Link>
             <Link to={`/decks/${deckId}/cards/new`}>
-              <button className='btn btn-primary'>
-                <i class='bi bi-plus mr-1'></i>
-                Add Card
-              </button>
+              <button className='btn btn-primary'>Add Card</button>
             </Link>
           </div>
           <div className='col-2'>
             <button className='btn btn-danger' onClick={handleDeckDelete}>
-              <i className='bi bi-trash'>Delete</i>
+              Delete
             </button>
           </div>
         </div>

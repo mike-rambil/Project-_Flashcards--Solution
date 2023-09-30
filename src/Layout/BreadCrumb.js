@@ -7,13 +7,13 @@ function BreadCrumb({ linkName = '', link = '', pageName = 'Default Value' }) {
       <ol className='breadcrumb'>
         <li className='breadcrumb-item text-secondary'>
           <Link className='m-1' to='/'>
-            <i className='bi bi-house m-1'></i>Home
+            <i className='bi bi-house m-1'>-</i>Home
           </Link>
         </li>
 
         {link !== '' ? (
           <li className='breadcrumb-item text-secondary'>
-            <p className='m-1 text-info'></p>
+            <p className='m-1 text-info'>-</p>
             <Link to={link}>{linkName}</Link>
           </li>
         ) : (
@@ -21,7 +21,7 @@ function BreadCrumb({ linkName = '', link = '', pageName = 'Default Value' }) {
         )}
 
         <li className='breadcrumb-item active'>
-          <p className='m-1 text-info'>{pageName}</p>
+          -<p className='m-1 text-info'>{pageName}</p>
         </li>
       </ol>
     </nav>

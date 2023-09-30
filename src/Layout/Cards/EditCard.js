@@ -10,7 +10,6 @@ function EditCard() {
   const [deck, setDeck] = useState({});
   const [card, setCard] = useState({});
 
-  //Load deck and card
   useEffect(() => {
     const loadDeck = async () => setDeck(await readDeck(deckId));
     loadDeck();
@@ -18,7 +17,6 @@ function EditCard() {
     loadCard();
   }, [deckId, cardId]);
 
-  //Create change handler for form
   const handleChange = ({ target }) => {
     setCard({
       ...card,

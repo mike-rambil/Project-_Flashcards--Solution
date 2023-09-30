@@ -51,7 +51,7 @@ function ListDecks({ decks }) {
                     className='btn btn-danger'
                     onClick={handleDelete}
                   >
-                    <i class='bi bi-trash'>Delete</i>
+                    Delete
                   </button>
                 </div>
               </div>

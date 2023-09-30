@@ -71,10 +71,11 @@ function StudyCard({ cards }) {
   } else {
     return (
       <div>
-        <h3>Not enough cards.</h3>
+        <h3>Not enough cards. Please add more!</h3>
         <div className='row my-2'>
           <p>
-            You need at least 3 cards to study. This deck has {cards.length}
+            You need at least 3 cards to study. This deck includes{' '}
+            {cards.length}
             cards.
           </p>
         </div>

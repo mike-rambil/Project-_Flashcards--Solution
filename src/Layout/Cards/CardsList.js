@@ -39,9 +39,7 @@ function CardsList({ deck }) {
                       value={card.id}
                       className='btn btn-danger'
                     >
-                      <i value={card.id} className='bi bi-trash'>
-                        Delete
-                      </i>
+                      Delete
                     </button>
                   </div>
                 </div>

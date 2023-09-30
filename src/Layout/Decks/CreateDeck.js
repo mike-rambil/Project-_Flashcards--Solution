@@ -50,7 +50,7 @@ function NewDeck() {
         <br />
         <br />
         <Link to='/'>
-          <button className='btn btn-secondary mr-1'>Cancel</button>
+          <button className='btn btn-secondary mr-2'>Cancel</button>
         </Link>
         <button
           type='submit'

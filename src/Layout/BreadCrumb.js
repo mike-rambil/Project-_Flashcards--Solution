@@ -20,7 +20,7 @@ function BreadCrumb({ linkName = '', link = '', pageName = 'Default Value' }) {
           ''
         )}
 
-        <li className='breadcrumb-item active' aria-current='page'>
+        <li className='breadcrumb-item active'>
           <p className='m-1 text-info'>{pageName}</p>
         </li>
       </ol>

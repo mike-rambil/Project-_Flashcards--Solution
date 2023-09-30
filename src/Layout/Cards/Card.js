@@ -22,7 +22,7 @@ function Card({ card, handleCardDelete }) {
                 className='btn btn-danger'
                 onClick={handleCardDelete}
               >
-                <i value={card.id} class='bi bi-trash mr-1'></i>
+                Delete
               </button>
             </div>
           </div>

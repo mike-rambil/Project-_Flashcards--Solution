@@ -24,7 +24,6 @@ function EditCard() {
     });
   };
 
-  //Create submit handler to save edits
   const handleSubmit = (event) => {
     event.preventDefault();
     async function updateCardData() {
@@ -32,9 +31,7 @@ function EditCard() {
         await updateCard(card);
         history.push(`/decks/${deckId}`);
       } catch (error) {
-        if (error.name !== 'AbortError') {
-          throw error;
-        }
+        console.log(error);
       }
     }
     updateCardData();

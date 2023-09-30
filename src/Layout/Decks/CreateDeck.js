@@ -28,9 +28,7 @@ function NewDeck() {
         const newDeck = await createDeck(formData);
         history.push(`/decks/${newDeck.id}`);
       } catch (error) {
-        if (error === !'AbortError') {
-          throw error;
-        }
+        console.log(error);
       }
     }
     deckCreate();

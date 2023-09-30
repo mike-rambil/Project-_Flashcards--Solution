@@ -20,9 +20,7 @@ function EditDeck() {
         const loadedDeck = await readDeck(deckId);
         setDeck(loadedDeck);
       } catch (error) {
-        if (error.name !== 'AbortError') {
-          throw error;
-        }
+        console.log(error);
       }
     }
     loadDeck();
